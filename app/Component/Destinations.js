@@ -10,12 +10,12 @@ const Categories = () => {
     { image: "./camera.jpg", tag: "Decors" },
   ];
   return (
-    <div className="flex gap-4 justify-around mx-24 my-12 ">
+    <div className="flex gap-4 justify-around mx-24 my-12 pb-[5rem]">
         {data.map((item) => {
           return (
             <>
-            <div className="bg-white rounded-xl p-3 shadow">
-              <img src={item.image} alt="" className="w-[10rem] h-[10rem] rounded-xl"/>
+            <div>
+              <img src={item.image} alt="" className="size-[8rem] rounded-full"/>
               <h3 className="px-1 py-3 text-center">{item.tag}</h3>
               </div>
             </>
